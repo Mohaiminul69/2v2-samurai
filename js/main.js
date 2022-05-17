@@ -27,6 +27,7 @@ class Sprite {
     };
     this.color = color;
     this.isAttacking;
+    this.health = 100;
   }
 
   draw() {
@@ -157,6 +158,8 @@ function animate() {
   ) {
     player.isAttacking = false;
     console.log("Attack");
+    enemy.health -= 20;
+    document.getElementById("enemy-health").style.width = enemy.health + "%";
   }
 
   //Detect Collision for enemy
@@ -169,6 +172,8 @@ function animate() {
   ) {
     enemy.isAttacking = false;
     console.log("Attack");
+    player.health -= 20;
+    document.getElementById("player-health").style.width = player.health + "%";
   }
 }
 
