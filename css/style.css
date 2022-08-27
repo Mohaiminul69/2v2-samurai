@@ -6,12 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  background: black;
-}
-
 #game-screen {
   position: relative;
   display: inline-block;
